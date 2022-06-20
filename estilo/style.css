@@ -245,3 +245,15 @@ footer {
     }
 }
 
+/* J1 MINI */
+@media (max-width: 360) {
+      /* Layout */
+      .Container {
+        max-width: 348px;
+    }
+
+    .conteudo {
+        width: 243px;
+    }
+}
+
