@@ -38,6 +38,10 @@ button {
     flex-direction: row;
 }
 
+ol {
+    list-style-position: inside;
+}
+
 ul {
     list-style: inside;
     list-style-type: none;
