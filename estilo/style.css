@@ -250,15 +250,15 @@ footer {
 @media (max-width: 350px) {
       /* Layout */
     .Container {
-        max-width: 321px;
+        max-width: 291px;
     }
 
     .conteudo {
-        width: 225px;
+        width: 195px;
     }
 
     .imagens02 {
-        width: 220px;
+        width: 190px;
     }
 }
 
