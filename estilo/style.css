@@ -254,11 +254,15 @@ footer {
     }
 
     .conteudo {
-        width: 195px;
+        width: 290px;
+    }
+
+    .imagens {
+        width: 288px;
     }
 
     .imagens02 {
-        width: 190px;
+        width: 288px;
     }
 }
 
