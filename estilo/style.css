@@ -247,7 +247,7 @@ footer {
 
 /* J1 MINI */
 
-@media (max-width: 332) {
+@media (max-width: 350px) {
       /* Layout */
     .Container {
         max-width: 321px;
