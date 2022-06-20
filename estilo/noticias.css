@@ -1,0 +1,73 @@
+        /* GAMBIARRA */
+        @media (min-width:940px) {
+            .todasNoticias {
+                margin-top: 10px;
+                display: flex;
+            }
+
+            .conteudoNoticias {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .Noticias {
+                display: flex;
+            }
+
+        }
+
+        #noticiaTelaPequena {
+                display: none;
+            }
+
+        .todasNoticias {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .conteudoNoticias {
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .noticiaPrincipal {
+            width: 530px;
+            height: 370px;
+            box-shadow: 2px -1px 10px -3px #0000005d;
+        }
+
+        .Noticia {
+            width: 288px;
+            height: 300px;
+            margin-right: 15px;
+            box-shadow: 2px -1px 10px -3px #0000005d;
+            margin-top: 10px;
+        }
+
+        p {
+            text-align: left;
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        @media (max-width:560px) {
+            .noticiaPrincipal {
+                display: none;
+            }
+            #noticiaTelaPequena {
+                display: block;
+            }
+            
+            .Noticia {
+                margin-right: 0px;
+            }
+        }

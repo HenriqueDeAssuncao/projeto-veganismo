@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Thinking - Maquiagens veganas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/artigos.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="Container Flex">
+            <div id="Logo">
+                <a href="index.html"><img src="imagens/logo-site.png" alt="Logo do site" id="logo-site"></a>
+            </div>
+            <nav id="links" class="CentralizadorPC">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="hamburguer">&#x268c;</label>
+                <ul class="CentralizadorPC">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="artigos.html">ARTIGOS</a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-instagram.png"
+                                alt="ícone Instagram" class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-twitter.png" alt="ícone Twitter"
+                                class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-youtube.png" alt="ícone Youtube"
+                                class="icones"></a></li>
+                </ul>
+            </nav>
+    </header>
+    </div>
+    <main>
+        <div class="conteudo semSombra">
+            <div class="tituloArtigoFlex">
+                <h1>CONHEÇA AS MAQUIAGENS VEGANAS</h1>
+                <p id="mostrarData"></p>
+                <img src="imagens/capa-artigo001.webp" class="imagens" alt="Maquiagens">
+            </div>
+        </div>
+
+        <div class="Features conteudo">
+            <div class="caixaAudio">
+                <label>Ouça o conteúdo:</label>
+                <audio controls preload="metadata">
+                    <source src="midia/artigo001.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="caixaFonte">
+                <label for="tamanhoFonte" id="labelTamanhoFonte">Alterar tamanho da fonte:</label>
+                <select id="tamanhoFonte">
+                    <option value="16px">padrão</option>
+                    <option value="18px">18</option>
+                    <option value="19px">19</option>
+                    <option value="20px">20</option>
+                    <option value="22px">22</option>
+                </select>
+                <button onclick="alterar()">Alterar</button>
+            </div>
+        </div>
+
+        <div class="conteudo" id="tamanhoFonteJs">
+            <p>
+                <strong>O</strong> veganismo se estende a diversas áreas, inclusive ao uso de cosméticos.
+            </p>
+            <p>
+                <em>Aqui vão algumas dicas para identificar produtos de origem animal na maquiagem, se atente a
+                    composição dos seguintes componentes: </em>
+            </p>
+            <ul>
+                <li>Carmim, cochonilha ou ácido carmínico: </li>
+                <p>
+                    É um pigmento vermelho de origem animal, extraído do cochonilha-do-carmim (Dactylopius coccus,
+                    parente do pulgão).
+                </p>
+                <li>Cera de abelha, geleia real, mel, pólen ou própolis:</li>
+                <p>
+                    Também podem aparecer no rótulo em inglês (bee wax, royal gelly, honey, pollen). São ingredientes
+                    extraídos das abelhas e que são muito comuns em maquiagens naturais e orgânicas.
+                </p>
+                <li>Colágeno e elastina: </li>
+                <p>
+                    Ingredientes geralmente extraídos do couro bovino. Também pode aparecer no rótulo como gelatina.
+                </p>
+                <li>Lanolina ou álcool de lanolina acetilado:</li>
+                <p>
+                    Óleo natural produzido a partir da lã de ovelha.
+                </p>
+                <li>Pó ou proteínas da seda:</li>
+                <p>
+                    Também pode aparecer no rótulo como silk. Trata-se de um ingrediente extraído dos casulos de
+                    bichos-da-seda.
+                </p>
+                <li>Ácido esteárico ou stearic acid:</li>
+                <p>
+                    Muito presente em máscaras de cílios, é um derivado de gordura animal bovina ou suína. No entanto,
+                    também possui uma versão vegetal, então atente-se aos selos no rótulo ao ver esse ingrediente.
+                </p>
+                <li>Ácido hialurônico:</li>
+                <p>
+                    Utilizado para preenchimento de rugas na dermatologia, mas aparece cada vez mais em cosméticos.
+                    Pode ser tanto de origem animal como de origem bacteriana. Certifique-se da origem do ingrediente
+                    antes de comprar o produto, para ter certeza de que a maquiagem é vegana.
+                </p>
+            </ul>
+            <p>
+                Esses são apenas alguns dos ingredientes de origem animal utilizados na composição de maquiagens. É
+                importante lembrar que todos eles possuem ótimos substitutos de origem vegetal ou sintética.
+            </p>
+            <p>
+                <em>Existem diversas marcas nacionais, acessíveis e veganas, ou com certos produtos livres de crueldade
+                    animal. Aqui vão algumas dicas:</em>
+            </p>
+
+            <ul>
+                <li>Daiulus</li>
+                <div class="coluna">
+                    <img src="imagens/daiulus.png" alt="Dailus-logo" class="imagens02">
+                    <p>
+                        A Dailus é uma empresa cruelty-free, tem o certificado do PETA e possui uma linha repleta de
+                        produtos veganos, incluindo inúmeras cores de esmaltes.
+                    </p>
+                </div>
+
+                <li>Amo Karité</li>
+                <div class="coluna">
+                    <img src="imagens/amo-karite.png" alt="Amo Karité logo" class="imagens02">
+                    <p>
+                        A make vegana da Amo Karité é produzida num processo 100% artesanal. Todas as matérias-primas
+                        são
+                        selecionadas com o objetivo de fazer bem para a pele, trazendo benefícios além de pigmentar. Ao
+                        todo, a linha conta com 7 tonalidades de bases e quase 30 tonalidades de multifuncionais sólidos
+                        e
+                        com lançamentos incríveis.
+                    </p>
+                </div>
+
+                <li>Vizella</li>
+                <div class="coluna">
+                    <img src="imagens/vizella.png" alt="vizella-logo" class="imagens02">
+                    <p>
+                        Com uma linha completa de maquiagem para pele, olhos, lábios e sobrancelha, a Vizella é uma
+                        marca de
+                        maquiagem vegana 100% brasileira. Assim, a marca cria produtos de qualidade, preço justo e que
+                        atende a todos os gostos, respeitando a individualidade de cada beleza. O destaque da marca está
+                        nas
+                        bases e corretivos, que possuem alta cobertura, além de grande variedade de tons. São 18 tons de
+                        base e 12 de corretivo disponíveis.
+                    </p>
+                </div>
+
+                <li>Face it </li>
+                <div class="coluna">
+                    <img src="imagens/face-it.webp" alt="face it logo" class="imagens02">
+                    <p>
+                        A marca é completamente vegana e seu grande destaque são os batons. Todos são muito bem
+                        avaliados e
+                        a marca até ganhou um prêmio de melhor batom no ano de 2019. Além de vegana, possui o selo
+                        EURECICLO, que significa que a marca compensa o impacto ambiental produzido pelas embalagens que
+                        produz.
+                    </p>
+                </div>
+
+                <li>Vult</li>
+                <div class="coluna">
+                    <img src="imagens/vult.jpg" alt="vult-logo" class="imagens02">
+                    <p>
+                        É uma marca nacional que faz parte do grupo O Boticário. Embora não seja 100% vegana, pois
+                        alguns
+                        produtos têm ingredientes de origem animal, é cruelty free e possui várias maquiagens aptas para
+                        veganas. Fique de olho no rótulo.
+                    </p>
+                </div>
+            </ul>
+        </div>
+        <footer>
+            <p>
+                Site de Henrique Asunción <img src="imagens/heheha.png" alt="Heheha">, Julia Soares, Thomas e Alex
+                Miguel do 2° Mtec Info Manhã
+            </p>
+        </footer>
+    </main>
+    <script>
+        function alterar() {
+            let alteracoes = document.getElementById('tamanhoFonteJs');
+            let tamanhoFonte = String(document.getElementById('tamanhoFonte').value);
+            alteracoes.style.cssText = `font-size: ${tamanhoFonte}`;
+        }
+
+        let data = new Date();
+        function formatarData(data) {
+            let newDate = new Date(data);
+            return `${newDate.getDate()}/${newDate.getMonth()}/${newDate.getFullYear()}`;
+        }
+
+        let mostrarData = document.getElementById('mostrarData');
+        mostrarData.innerText = formatarData(data);
+
+        let nomes = ['Por Thomas ', ' Por Alex Miguel ', ' Por Julia Soares '];
+        document.getElementById('mostrarData').innerText = nomes[2] + mostrarData.innerText;
+
+    </script>
+</body>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Thinking - Maquiagens veganas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/artigos.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="Container Flex">
+            <div id="Logo">
+                <a href="index.html"><img src="imagens/logo-site.png" alt="Logo do site" id="logo-site"></a>
+            </div>
+            <nav id="links" class="CentralizadorPC">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="hamburguer">&#x268c;</label>
+                <ul class="CentralizadorPC">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="artigos.html">ARTIGOS</a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-instagram.png" alt="ícone Instagram" class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-twitter.png" alt="ícone Twitter" class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-youtube.png" alt="ícone Youtube" class="icones"></a></li>
+                </ul>
+            </nav>
+    </header>
+    </div>
+    <main>
+        <div class="conteudo semSombra">
+            <div class="tituloArtigoFlex">
+                <h1>Veganismo: 4 dicas para começar</h1>
+                <p id="mostrarData"></p>
+                <img src="imagens/capa-artigo002.jpg" class="imagens" alt="Comida">
+            </div>
+        </div>
+
+        <div class="Features conteudo">
+            <div class="caixaAudio">
+                <label>Ouça o conteúdo:</label>
+                <audio controls preload="metadata">
+                    <source src="midia/artigo002.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="caixaFonte">
+                <label for="tamanhoFonte" id="labelTamanhoFonte">Alterar tamanho da fonte:</label>
+                <select id="tamanhoFonte">
+                    <option value="16px">padrão</option>
+                    <option value="18px">18</option>
+                    <option value="19px">19</option>
+                    <option value="20px">20</option>
+                    <option value="22px">22</option>
+                </select>
+                <button onclick="alterar()">Alterar</button>
+            </div>
+        </div>
+
+        <div class="conteudo" id="tamanhoFonteJs">
+            <ol>
+                <li>Entenda as suas motivações</li>
+                    <p>
+                        Com qualquer tipo de mudança, quanto mais forte e pessoal é a sua motivação, maior a probabilidade de você mantê-la. Uma pessoa pode tomar a atitude de ser vegana pelos mais diversos motivos, como razões éticas ou emocionais. Outra possibilidade é a busca por uma saúde melhor, diminuindo a ingestão de gorduras saturadas.
+                    </p>
+                    <p>
+                        Não há prazos para cumprir a missão de se tornar uma pessoa vegana, já que uma mudança imediata pode parecer muito restritiva. Também pode ser doloroso pensar em deixar de lado alimentos amados. Em vez disso, tente começar por ser vegano apenas no café da manhã em dois dias da semana, por exemplo ou, ainda, parar o consumo de frango primeiro. 
+                    </p>
+                <li>Planeje</li>
+                    <p>
+                        A preparação dos alimentos é fundamental para tentar uma nova maneira de comer. Decidir o que comer pode ser uma luta constante, por isso vale encontrar receitas veganas atraentes ou encomendar marmitas que deixem a vida um pouco mais prática. Além disso, pergunte-se:
+                    </p>
+                    <ul>
+                        <li>Com que frequência você come fora?</li>
+                        <li>Você gosta de cozinhar?</li>
+                        <li>Você gosta de socializar?</li>
+                        <li>Conhece alguém que seja vegano que possa te dar dicas, receitas e indicar restaurantes veganos?</li>
+                    </ul>
+                    <p>
+                        Nenhuma das respostas é uma espécie de desqualificação, mas você pode identificar potenciais armadilhas que possam dificultar a adoção desse novo estilo de vida. O último questionamento, inclusive, é superimportante, já que ter apoio ao fazer uma mudança pode ajudar a suavizar a transição.   
+                    </p>
+                <li>Faça boas escolhas nutricionais </li>
+                    <p>
+                        Parar de consumir produtos de origem animal pode ser bom, mas, tão importante quanto é saber com o que você está substituindo esses itens. Em vez de exagerar nas batatas fritas, por exemplo, o ideal é buscar gorduras boas em outros tipos de alimento, como azeite de oliva, nozes e abacates, que são calóricos e dão saciedade. 
+                    </p>
+                <li>Lembre-se da vitamina B12</li>
+                    <p>
+                        Uma das maiores preocupações ao começar a seguir o veganismo está na falta da vitamina B12, nutriente proveniente de fontes animais e essencial para o organismo. A recomendação é informar o médico sobre a sua nova dieta para ter os níveis da vitamina acompanhados e, caso seja necessário, realizar a complementação da quantidade diária.
+                    </p>
+                    <p>
+                        Outro ponto que gera receio é: onde encontrar proteína? Pode parecer que a falta de produtos de origem animal na alimentação fará com que a pessoa fique com falta desse nutriente. Porém, o feijão, tofu, vegetais, grãos, nozes e abacates são ótimos substitutos.
+                    </p>
+            </ol>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Site de Henrique Asunción <img src="imagens/heheha.png" alt="Heheha">, Julia Soares, Thomas e Alex
+            Miguel do 2° Mtec Info Manhã
+        </p>
+    </footer>
+
+    <script>
+        function alterar() {
+            let alteracoes = document.getElementById('tamanhoFonteJs');
+            let tamanhoFonte = String(document.getElementById('tamanhoFonte').value);
+            alteracoes.style.cssText = `font-size: ${tamanhoFonte}`;
+        }
+
+        let data = new Date();
+        function formatarData(data) {
+            let newDate = new Date(data);
+            return `${newDate.getDate()}/${newDate.getMonth()}/${newDate.getFullYear()}`;
+        }
+
+        let mostrarData = document.getElementById('mostrarData');
+        mostrarData.innerText = formatarData(data);
+
+        let nomes = ['Por Thomas ', ' Por Alex Miguel ', ' Por Julia Soares '];
+        document.getElementById('mostrarData').innerText = nomes[1] + mostrarData.innerText;
+
+    </script>
+</body>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Thinking - Início</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/inicio.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<style>
+    /*GAMBIARRA*/
+
+    @media (max-width: 450px) {
+        .imagemArtigo {
+            width: 93.25px;
+            height: 49.88px;
+        }
+
+        #js {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+</style>
+
+<body>
+    <header id="topo">
+        <div class="Container Flex">
+            <div id="Logo">
+                <a href="index.html"><img src="imagens/logo-site.png" alt="Logo do site" id="logo-site"></a>
+            </div>
+
+            <nav id="links" class="CentralizadorPC">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="hamburguer">&#x268c;</label>
+                <ul class="CentralizadorPC">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="artigos.html">ARTIGOS</a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-instagram.png"
+                                alt="ícone Instagram" class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-twitter.png" alt="ícone Twitter"
+                                class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-youtube.png" alt="ícone Youtube"
+                                class="icones"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="artigos" class="Container">
+        <div class="linksArtigos" id="js">
+            <div class="imagemArtigo">
+                <img src="imagens/capa-artigo001.webp" alt="Maquiagens" class="imagemArtigo" id="imgMaquiagem">
+            </div>
+            <div class="artigo">
+                <p>Por Julia Soares 19/5/2022</p>
+                <h1><a href="artigo001.html">Maquiagens veganas</a></h1>
+            </div>
+        </div>
+
+        <div class="linksArtigos">
+            <div class="artigo">
+                <p>Por Alex Miguel 19/5/2022</p>
+                <h1><a href="artigo002.html">Veganismo: 4 dicas para começar</a></h1>
+            </div>
+            <div class="artigo">
+                <p>Por Thomas 19/5/2022</p>
+                <h1><a href="artigo003.html">Sensacionalismo confunde e reforça preconceito com veganismo </a></h1>
+            </div>
+        </div>
+
+        <div class="linksArtigos">
+            <div class="artigo">
+                <p>Por Julia Soares 19/5/2022</p>
+                <h1><a href="artigo004.html">Veganismo não é um movimento para rico</a></h1>
+            </div>
+            <div class="artigo">
+                <p>Por Thomas 19/5/2022</p>
+                <h1><a href="artigo005.html">Por que o veganismo tem que ser anticapitalista</a></h1>
+            </div>
+        </div>
+    </div>
+</body>

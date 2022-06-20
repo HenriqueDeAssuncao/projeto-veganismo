@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegan Thinking - Maquiagens veganas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/artigos.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="topo">
+        <div class="Container Flex">
+            <div id="Logo">
+                <a href="index.html"><img src="imagens/logo-site.png" alt="Logo do site" id="logo-site"></a>
+            </div>
+            <nav id="links" class="CentralizadorPC">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" id="hamburguer">&#x268c;</label>
+                <ul class="CentralizadorPC">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li><a href="artigos.html">ARTIGOS</a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-instagram.png" alt="ícone Instagram" class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-twitter.png" alt="ícone Twitter" class="icones"></a></li>
+                    <li><a href="index.html" target="_blank"><img src="imagens/icone-youtube.png" alt="ícone Youtube" class="icones"></a></li>
+                </ul>
+            </nav>
+    </header>
+    </div>
+    <main>
+        <div class="conteudo semSombra">
+            <div class="tituloArtigoFlex">
+                <h1>Sensacionalismo confunde e reforça preconceito com veganismo</h1>
+                <p id="mostrarData"></p>
+                <img src="imagens/capa-artigo003.webp" class="imagens" alt="Dispositivos">
+            </div>
+        </div>
+
+        <div class="Features conteudo">
+            <div class="caixaAudio">
+                <label>Ouça o conteúdo:</label>
+                <audio controls preload="metadata">
+                    <source src="midia/artigo003.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="caixaFonte">
+                <label for="tamanhoFonte" id="labelTamanhoFonte">Alterar tamanho da fonte:</label>
+                <select id="tamanhoFonte">
+                    <option value="16px">padrão</option>
+                    <option value="18px">18</option>
+                    <option value="19px">19</option>
+                    <option value="20px">20</option>
+                    <option value="22px">22</option>
+                </select>
+                <button onclick="alterar()">Alterar</button>
+            </div>
+        </div>
+
+        <div class="conteudo" id="tamanhoFonteJs">
+            <p>
+                <strong>D</strong>iversas vezes nos deparamos com reportagens sensacionalistas e pretensiosas que passam uma imagem totalmente equivocada e muitas vezes maldosa do movimento vegano. Comumente associam o veganismo à negligência com filhos, doenças e atitudes extremistas. Geralmente essas afirmações partem de pessoas que nunca foram veganas e desconhecem a intenção do movimento.
+            </p>
+            <p>
+                Essas matérias não existem à toa, pois reforçar crenças do imaginário coletivo com um caso isolado, ajuda a dar clique e engajamento. Ainda mais hoje, que a grande maioria das pessoas se informa apenas pela manchete.
+            </p>
+            <p>
+                Essa atitude gera desinformação, reforça preconceitos e no final o que importa é a receita gerada. Por isso, é necessário mostrar que o movimento vegano não é extremista, não é uma dieta, uma modinha, seita, religião ou algo do tipo.
+            </p>
+            <p>
+                O veganismo é um posicionamento ético perante ao sofrimento animal, que se opõe ao especismo (especismo é o ponto de vista que uma espécie, no caso a humana, tem todo o direito de explorar, escravizar e matar as demais espécies de animais por considerá-las inferiores). Ser vegano é lutar pelo fim dos maus tratos aos animais, pelo fim da exploração e crueldade contra qualquer animal. Isso de fato é veganismo.
+            </p>
+            <p>
+                É impressionante o quanto alguns jornalistas e pessoas mal-intencionadas utilizam o termo ‘’vegano’’ de forma deliberada e sem a mínima responsabilidade.
+            </p>
+            <p>
+                Recentemente, alguns jornais brasileiros postaram uma matéria que dizia: ‘’Vegano diz ter ficado 10 anos mais jovem bebendo a própria urina.’’ Essa matéria não tem nenhum compromisso em informar ou trazer alguma reflexão responsável sobre o assunto, porque não existe absolutamente nenhuma relação.
+            </p>
+            <p>
+                Sabemos que existem famílias negligentes que usam dietas absurdas para alimentar os filhos, no entanto, não daria tanto clique quanto colocar a palavra ‘vegano’. Não amamentar o filho com leite materno, por exemplo, não tem nenhuma relação com o veganismo, aliás, é proposto o oposto: amamentar com leite materno e não com fórmula infantil de leite de vaca.
+            </p>
+            <p>
+                A vacina é um grande exemplo do quanto um caso isolado se torna notícia negativa. Um vegano que se posiciona contra o uso de vacina nas redes sociais acaba sendo o porta-voz do movimento, sendo que na verdade, a maioria dos veganos enxergam a vacina como algo necessário, e não só fazem questão de tomar a vacina como incentivam que todos se vacinem.
+            </p>
+            <p>
+                Claro que, testar qualquer substância em animais inocentes e envolver o uso de animais de alguma forma na produção de vacinas e medicamentos não é o ideal. Mas é necessário compreender que, a realidade é muito mais complexa e precisa ser encarada de forma responsável.
+            </p>
+            <p>
+                Lutaremos pelo fim do uso de animais no meio científico, porém enquanto não houver alternativas, iremos nos vacinar por uma questão de responsabilidade coletiva. Esse é o posicionamento da maior parte dos veganos, mas não vimos nenhuma matéria de grande mídia abordando essa questão com a devida responsabilidade.
+            </p>
+            <p>
+                Estamos atuando como midiativistas veganos já tem um bom tempo, e é desanimador se deparar com notícias tão nocivas e desrespeitosas, pois não se trata de opinião contrária ou argumento, é apelativo, é irresponsável, é jogo sujo. Não tem problema em discordar, contra-argumentar, mas não é isso que acontece na maioria das vezes.
+            </p>
+            <p>
+                Todos nós precisamos de boas informações sobre diversos assuntos e temas, porque é muito importante entender os conteúdos de forma ampla, sem preconceitos e com base em informações verdadeiras. Além disso, é preciso ter autonomia e pensar por si próprio para não cair em armadilhas. 
+            </p>
+            <p>
+                Matérias sensacionalistas não contribuem para uma sociedade melhor e não agregam em nada ao movimento social em defesa dos animais, só servem para gerar mais e mais estereótipos negativos e desinformar pessoas mais leigas sobre o assunto. Como já foi dito, no final das contas, o que importa é o engajamento e a grana.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Site de Henrique Asunción <img src="imagens/heheha.png" alt="Heheha">, Julia Soares, Thomas e Alex
+            Miguel do 2° Mtec Info Manhã
+        </p>
+    </footer>
+
+    <script>
+        function alterar() {
+            let alteracoes = document.getElementById('tamanhoFonteJs');
+            let tamanhoFonte = String(document.getElementById('tamanhoFonte').value);
+            alteracoes.style.cssText = `font-size: ${tamanhoFonte}`;
+        }
+
+        let data = new Date();
+        function formatarData(data) {
+            let newDate = new Date(data);
+            return `${newDate.getDate()}/${newDate.getMonth()}/${newDate.getFullYear()}`;
+        }
+
+        let mostrarData = document.getElementById('mostrarData');
+        mostrarData.innerText = formatarData(data);
+
+        let nomes = ['Por Thomas ', ' Por Alex Miguel ', ' Por Julia Soares '];
+        document.getElementById('mostrarData').innerText = nomes[0] + mostrarData.innerText;
+
+    </script>
+</body>
