@@ -47,8 +47,9 @@
         }
 
         p {
-            text-align: left;
+            text-align: justify;
             padding: 5px;
+            
         }
 
         a {

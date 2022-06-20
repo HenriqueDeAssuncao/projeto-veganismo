@@ -109,8 +109,7 @@ main {
 }
 
 .conteudo p {
-    text-align: justify;
-    padding: 10px;
+    text-align: left;
 }
 
 .imagens {
